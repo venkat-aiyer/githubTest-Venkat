@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "21e9c91d-53e7-4d78-8061-d74eeb6d2165": {
+      "ProjectGuid": "21e9c91d-53e7-4d78-8061-d74eeb6d2165",
+      "DisplayName": "SmallPrograms",
+      "ColorIndex": 0
+    },
+    "765b7737-706e-454a-b239-4312a5d5da73": {
+      "ProjectGuid": "765b7737-706e-454a-b239-4312a5d5da73",
+      "DisplayName": "TestApp2",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

@@ -1,0 +1,7 @@
+﻿  TestApp2.cpp
+c:\personal\interviewkit\handson-c++\algorithms\smallprograms\testapp2\testapp2.cpp(109): warning C4018: '<': signed/unsigned mismatch
+c:\personal\interviewkit\handson-c++\algorithms\smallprograms\testapp2\testapp2.cpp(130): warning C4018: '<': signed/unsigned mismatch
+c:\personal\interviewkit\handson-c++\algorithms\smallprograms\testapp2\testapp2.cpp(175): warning C4018: '<': signed/unsigned mismatch
+c:\personal\interviewkit\handson-c++\algorithms\smallprograms\testapp2\testapp2.cpp(178): warning C4018: '<': signed/unsigned mismatch
+  TestApp2.vcxproj -> C:\Personal\interviewkit\Handson-C++\Algorithms\SmallPrograms\Debug\TestApp2.exe
+  TestApp2.vcxproj -> C:\Personal\interviewkit\Handson-C++\Algorithms\SmallPrograms\Debug\TestApp2.pdb (Full PDB)

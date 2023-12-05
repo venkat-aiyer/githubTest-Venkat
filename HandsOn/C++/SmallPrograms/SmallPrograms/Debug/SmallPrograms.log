@@ -1,0 +1,124 @@
+﻿  SmallPrograms.cpp
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(44,6): warning C4101: 'ans': unreferenced local variable
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(79,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(79,60): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(128,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(134,16): warning C4244: '*=': conversion from 'double' to 'long', possible loss of data
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(169,19): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(364,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(395,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(554,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(577,14): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(602,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(726,30): warning C4244: 'argument': conversion from '__int64' to 'const unsigned int', possible loss of data
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(751,19): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(770,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(803,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(846,14): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1198,11): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1198,35): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1595,53): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1665,23): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1669,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1672,59): warning C4018: '>': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1686,36): warning C4018: '<=': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1730,23): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1735,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1926,21): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1942,21): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2137,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2175,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2387,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2505,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2716,21): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2883,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3024,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3161,17): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3320,21): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3322,22): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3382,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3478,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3505,44): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3509,45): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3540,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3542,21): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3550,11): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3553,11): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3679,18): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3684,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3731,35): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3733,38): warning C4018: '>=': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3871,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3961,21): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4005,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4030,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4074,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4232,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4234,21): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4335,11): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4589,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4633,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4905,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5217,23): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5221,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5224,59): warning C4018: '>': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5236,36): warning C4018: '<=': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5302,20): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5326,21): warning C4018: '<': signed/unsigned mismatch
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5340,28): warning C4018: '<': signed/unsigned mismatch
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\utility(190,16): warning C4244: 'initializing': conversion from '__int64' to '_Ty1', possible loss of data
+          with
+          [
+              _Ty1=int
+          ]
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(749): message : see reference to function template instantiation 'std::pair<_Kty,_Ty>::pair<__int64&,__int64&,0>(_Other1,_Other2) noexcept' being compiled
+          with
+          [
+              _Kty=int,
+              _Ty=int,
+              _Other1=__int64 &,
+              _Other2=__int64 &
+          ]
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(749): message : see reference to function template instantiation 'std::pair<_Kty,_Ty>::pair<__int64&,__int64&,0>(_Other1,_Other2) noexcept' being compiled
+          with
+          [
+              _Kty=int,
+              _Ty=int,
+              _Other1=__int64 &,
+              _Other2=__int64 &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\utility(190,54): warning C4244: 'initializing': conversion from '__int64' to '_Ty2', possible loss of data
+          with
+          [
+              _Ty2=int
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(1412,1): error C2664: 'bool MaxComparator::operator ()(const int &,const int &)': cannot convert argument 1 from 'SolutionTopKFreq::NodeOne' to 'const int &'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(1412,1): message : Reason: cannot convert from 'SolutionTopKFreq::NodeOne' to 'const int'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(1412,20): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5002,7): message : see declaration of 'MaxComparator::operator ()'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(1411): message : see reference to function template instantiation 'bool std::_Debug_lt_pred<_Pr&,SolutionTopKFreq::NodeOne&,_Ty&,0>(MaxComparator&,_Ty1,_Ty2) noexcept(<expr>)' being compiled
+          with
+          [
+              _Pr=MaxComparator,
+              _Ty=SolutionTopKFreq::NodeOne,
+              _Ty1=SolutionTopKFreq::NodeOne &,
+              _Ty2=SolutionTopKFreq::NodeOne &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\algorithm(5668): message : see reference to function template instantiation 'void std::_Push_heap_by_index<SolutionTopKFreq::NodeOne*,SolutionTopKFreq::NodeOne,_Fn>(_RanIt,int,int,_Ty &&,_Pr)' being compiled
+          with
+          [
+              _Fn=MaxComparator,
+              _RanIt=SolutionTopKFreq::NodeOne *,
+              _Ty=SolutionTopKFreq::NodeOne,
+              _Pr=MaxComparator
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\queue(318): message : see reference to function template instantiation 'void std::push_heap<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>,_Pr>(_RanIt,_RanIt,_Pr)' being compiled
+          with
+          [
+              _Ty=SolutionTopKFreq::NodeOne,
+              _Pr=MaxComparator,
+              _RanIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<SolutionTopKFreq::NodeOne>>>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\queue(316): message : while compiling class template member function 'void std::priority_queue<SolutionTopKFreq::NodeOne,std::vector<SolutionTopKFreq::NodeOne,std::allocator<SolutionTopKFreq::NodeOne>>,MaxComparator>::push(SolutionTopKFreq::NodeOne &&)'
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5079): message : see reference to function template instantiation 'void std::priority_queue<SolutionTopKFreq::NodeOne,std::vector<SolutionTopKFreq::NodeOne,std::allocator<SolutionTopKFreq::NodeOne>>,MaxComparator>::push(SolutionTopKFreq::NodeOne &&)' being compiled
+F:\Learnings\From-Maersk\interviewkit\Handson-C++\Algorithms\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5076): message : see reference to class template instantiation 'std::priority_queue<SolutionTopKFreq::NodeOne,std::vector<SolutionTopKFreq::NodeOne,std::allocator<SolutionTopKFreq::NodeOne>>,MaxComparator>' being compiled

@@ -1,0 +1,8 @@
+﻿  TestApplication.cpp
+c:\personal\interviewkit\handson-c++\algorithms\smallprograms\testapplication\testapplication.cpp(34): warning C4018: '<': signed/unsigned mismatch
+c:\personal\interviewkit\handson-c++\algorithms\smallprograms\testapplication\testapplication.cpp(40): warning C4244: '*=': conversion from 'double' to 'long', possible loss of data
+c:\personal\interviewkit\handson-c++\algorithms\smallprograms\testapplication\testapplication.cpp(51): error C2679: binary '=': no operator found which takes a right-hand operand of type 'int' (or there is no acceptable conversion)
+  c:\personal\interviewkit\handson-c++\algorithms\smallprograms\testapplication\testapplication.cpp(79): note: could be 'Friend &Friend::operator =(Friend &&) noexcept(<expr>)'
+  c:\personal\interviewkit\handson-c++\algorithms\smallprograms\testapplication\testapplication.cpp(79): note: or       'Friend &Friend::operator =(const Friend &)'
+  c:\personal\interviewkit\handson-c++\algorithms\smallprograms\testapplication\testapplication.cpp(51): note: while trying to match the argument list '(Friend, int)'
+c:\personal\interviewkit\handson-c++\algorithms\smallprograms\testapplication\testapplication.cpp(71): error C2676: binary '&&': 'Friend' does not define this operator or a conversion to a type acceptable to the predefined operator

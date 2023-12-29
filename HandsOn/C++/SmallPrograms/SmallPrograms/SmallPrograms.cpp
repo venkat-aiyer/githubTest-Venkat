@@ -69,6 +69,29 @@ double findPower(double nInput, int nPow)
 	}
 	return nResult;
 }
+// Arrange even numbers in the begining of the array and odd numbers towards the end/ second half of the array.
+vector<int> sortArrayByParity(vector<int> nInputArr)
+{
+	int nLeft = 0;
+	int nRight = nInputArr.size() - 1;
+
+	while (nLeft < nRight)
+	{
+		while(nLeft < nRight && nInputArr[nLeft] % 2 == 0)
+			nLeft++;
+		while (nLeft < nRight && nInputArr[nRight] % 2 != 0)
+			nRight--;
+		if (nLeft < nRight)
+		{
+			// No need to increment the nLeft and nRight after the swap
+			swap(nInputArr[nLeft], nInputArr[nRight]);
+			// as it is not guaranteed that the nRight will have correct values
+			nLeft++;
+			nRight--;
+		}
+	}
+	return nInputArr;
+}
 
 // Given an array with equal number of odds and even numbers
 // Below function arranges odd number in odd indexes
@@ -111,7 +134,11 @@ void ArrangeOddAndEvenValsInRepectiveIdx(vector<int>& vArray)
 		if (vArray[nEvenIdx] % 2 != 0)
 		{
 			swap(vArray[nEvenIdx], vArray[nOddIdx]);
+			// we reach here only when even Idx has odd number and when we swap the
+			// odd num from even index to odd index we are incrementing the odd index as we are now sure that it has odd val.
+			// and so jumping to next odd val.
 			nOddIdx += 2;
+			// Int his problem we are checking only 1 index even index constantly to avoid odd vals and swapping till end of arr.
 		}
 		else
 		{
@@ -119,6 +146,68 @@ void ArrangeOddAndEvenValsInRepectiveIdx(vector<int>& vArray)
 		}
 	}
 }
+
+/*
+* 724. Find Pivot Index
+Given an array of integers nums, calculate the pivot index of this array.
+
+The pivot index is the index where the sum of all the numbers strictly to the left of the index is equal to the sum of all the numbers strictly to the index's right.
+
+If the index is on the left edge of the array, then the left sum is 0 because there are no elements to the left. This also applies to the right edge of the array.
+
+Return the leftmost pivot index. If no such index exists, return -1.
+
+Example 1:
+
+Input: nums = [1,7,3,6,5,6]
+Output: 3
+Explanation:
+The pivot index is 3.
+Left sum = nums[0] + nums[1] + nums[2] = 1 + 7 + 3 = 11
+Right sum = nums[4] + nums[5] = 5 + 6 = 11
+Example 2:
+
+Input: nums = [1,2,3]
+Output: -1
+Explanation:
+There is no index that satisfies the conditions in the problem statement.
+Example 3:
+
+Input: nums = [2,1,-1]
+Output: 0
+Explanation:
+The pivot index is 0.
+Left sum = 0 (no elements to the left of index 0)
+Right sum = nums[1] + nums[2] = 1 + -1 = 0
+*/
+// This problem requires meet in the middle approach.
+// Inititally collect the whole sum of the arr elements and store it into nRightSum
+// then for every index in arr (array moving from left to right) keep reducing the current index val from nRightSum
+// Then check the right sum == left sum  (while left Sum is being the sum of every array index from left)
+// the left sum should be computed only after the comparison check between rightSum == leftSum.
+
+// What we need is an index that has elements with total sum to its left is equal to the total sum of elems to the right
+int findPivotIndexNew(vector<int> nInputArr)
+{
+	// Looks like accumulate is available only after C++17.
+	// int nRightSum = accumulate(nInputArr.begin(), nInputArr.end(), 0);'
+	int nRightSum = 0;
+	for (auto elem : nInputArr)
+		nRightSum += elem;
+	int nLeftSum = 0;
+	for (int nLeft = 0; nLeft < nInputArr.size(); nLeft++)
+	{
+		nRightSum -= nInputArr[nLeft];
+		// this is the place where the total sum to left is checked with total sum to the right.
+		// Note that we havent included the current elements value into sum yet. And the element values so far is already deducted.
+		if (nRightSum == nLeftSum)
+			return nLeft;
+
+		nLeftSum += nInputArr[nLeft];
+	}
+	return -1;
+}
+
 
 // Below Program checks if the given integer is palindrome or not
 // To check the palindromic integer we may check only half of the integer
@@ -388,6 +477,57 @@ void sortColors(vector<int> nInputArr)
 		}
 	}
 }
+
+/*
+* 1679. Max Number of K-Sum Pairs
+* Leetcode : https://leetcode.com/problems/max-number-of-k-sum-pairs/description/?envType=study-plan-v2&envId=leetcode-75
+You are given an integer array nums and an integer k.
+
+In one operation, you can pick two numbers from the array whose sum equals k and remove them from the array.
+
+Return the maximum number of operations you can perform on the array.
+
+Example 1:
+
+Input: nums = [1,2,3,4], k = 5
+Output: 2
+Explanation: Starting with nums = [1,2,3,4]:
+- Remove numbers 1 and 4, then nums = [2,3]
+- Remove numbers 2 and 3, then nums = []
+There are no more pairs that sum up to 5, hence a total of 2 operations.
+Example 2:
+
+Input: nums = [3,1,3,4,3], k = 6
+Output: 1
+Explanation: Starting with nums = [3,1,3,4,3]:
+- Remove the first two 3's, then nums = [1,4,3]
+There are no more pairs that sum up to 6, hence a total of 1 operation.
+
+*/
+// although this problem is named maxOperations its just max operatiosn for sub arr sum.
+bool maxOperationsForsubArrSum(vector<int> nInputArr, int nTarget)
+{
+	int nLeft = 0;
+	int nRight = nInputArr.size() - 1;
+	int nCountOfOperatiosForSubArrSum = 0;
+	sort(nInputArr.begin(), nInputArr.end());
+	while (nLeft < nRight)
+	{
+		int nSum = nInputArr[nLeft] + nInputArr[nRight];
+		if (nSum == nTarget)
+		{
+			nCountOfOperatiosForSubArrSum++;
+			nLeft++;
+			nRight--;
+		}
+		else if (nSum < nTarget)
+			nLeft++;
+		else
+			nRight--;
+	}
+	return nCountOfOperatiosForSubArrSum;
+}
+
 
 /*
 * 525. Contiguous Array
@@ -753,6 +893,35 @@ int findMinSubArrLenWithSumGreaterThanOrEqToTarget(vector<int>& inputArr, int nT
 	return nMinLenOfSum == INT_MAX ? 0 : nMinLenOfSum;
 }
 
+int findMinLenOfSubArrSumOfK(vector<int>& nInputArr, int nTarget)
+{
+	int nLeft = 0;
+	int nRight = 0;
+	int nMinLenOfSum = INT_MAX;
+	int nSize = nInputArr.size();
+	int nCurrSum = 0;
+	while (nRight < nSize)
+	{
+		nCurrSum += nInputArr[nRight];
+		// Note the check condition below it checks and tries to preven that nCurrSum should not be greater than or equal to nTarget (nCurrSum >= nTarget)
+		if (nCurrSum >= nTarget)
+		{
+			while (nCurrSum >= nTarget)
+			{
+				nCurrSum -= nInputArr[nLeft];
+				nLeft++;
+			}
+			// Remember that the control has reached here after removing the elem that summed to equal to greater than target val so we need to include that as well.
+			// We just removed the left most char and that caused the nCurrSum to reduce further less than target.
+			// Hence we need to add the previous elem.
+			// The array is zero index based so addig 1 for that. So in total + 2;
+			nMinLenOfSum = min(nMinLenOfSum, nRight - nLeft + 2);
+		}
+		nRight++;
+	}
+	return nMinLenOfSum == INT_MAX ? 0 : nMinLenOfSum;
+}
+
 
 /*
 * 862. Shortest Subarray with Sum at Least K (Hard)
@@ -984,6 +1153,110 @@ void mergeSortedArraysInto1st(vector<int>& arrayMOne, int mSize, vector<int>& ar
 }
 
 /*
+* 27. Remove Element: https://leetcode.com/problems/remove-element/description/?envType=study-plan-v2&envId=top-interview-150
+* Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
+Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
+
+Change the array nums such that the first k elements of nums contain the elements which are not equal to val. The remaining elements of nums are not important as well as the size of nums.
+Return k.
+Custom Judge:
+
+The judge will test your solution with the following code:
+
+int[] nums = [...]; // Input array
+int val = ...; // Value to remove
+int[] expectedNums = [...]; // The expected answer with correct length.
+                            // It is sorted with no values equaling val.
+int k = removeElement(nums, val); // Calls your implementation
+
+assert k == expectedNums.length;
+sort(nums, 0, k); // Sort the first k elements of nums
+for (int i = 0; i < actualLength; i++) {
+    assert nums[i] == expectedNums[i];
+}
+If all assertions pass, then your solution will be accepted.
+
+ 
+
+Example 1:
+
+Input: nums = [3,2,2,3], val = 3
+Output: 2, nums = [2,2,_,_]
+Explanation: Your function should return k = 2, with the first two elements of nums being 2.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+Example 2:
+
+Input: nums = [0,1,2,2,3,0,4,2], val = 2
+Output: 5, nums = [0,1,4,0,3,_,_,_]
+Explanation: Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4.
+Note that the five elements can be returned in any order.
+It does not matter what you leave beyond the returned k (hence they are underscores).
+*/
+int removeElement(vector<int>& nInputArr, int nK)
+{
+	int i = 0;
+	for (int j = 0; j < nInputArr.size(); j++)
+	{
+		if (nInputArr[j] != nK)
+		{
+			nInputArr[i] = nInputArr[j];
+			i++;
+		}
+	}
+	return i;
+}
+
+/*
+26. Remove Duplicates from Sorted Array
+Solved
+Easy
+Topics
+Companies
+Hint
+Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
+
+Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:
+
+Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. The remaining elements of nums are not important as well as the size of nums.
+Return k.
+Custom Judge:
+
+The judge will test your solution with the following code:
+
+int[] nums = [...]; // Input array
+int[] expectedNums = [...]; // The expected answer with correct length
+
+int k = removeDuplicates(nums); // Calls your implementation
+
+assert k == expectedNums.length;
+for (int i = 0; i < k; i++) {
+	assert nums[i] == expectedNums[i];
+}
+If all assertions pass, then your solution will be accepted.
+*/
+
+int removeDuplicates(vector<int>& nInputArr)
+{
+	if (!nInputArr.empty())
+	{
+		int i = 0;
+		for (int j = 1; j < nInputArr.size(); j++)
+		{
+			// to Start with, check if 0th and 1st elem are same.
+			// When new element is found increment and bring it close the i to j.
+			if (nInputArr[i] != nInputArr[j])
+				i++;
+			// until new elem is found keep copying all to the existing arr.
+			nInputArr[i] = nInputArr[j];
+		}
+		nInputArr.erase(nInputArr.begin() + i + 1, nInputArr.end());
+		return i + 1;
+	}
+
+}
+
+
+/*
 * Meeting Rooms
 * https://leetcode.com/problems/meeting-rooms/
 In an array of meeting time intervals where intervals[i] = [starti, endi], determine if a person could attend all meetings.
@@ -1020,7 +1293,7 @@ and return an array of the non-overlapping intervals that cover all the interval
 */
 // Algorithm approach to remember
 // Step 1. Loop through 0 to n - 1 only
-// For every ith element check if i + 1 interval is more (this is doen by interval[i][1] < interval[i + 1][0])
+// For every ith element check if i + 1 interval is more (this is done by interval[i][1] < interval[i + 1][0])
 // If the above succeds then it means interval is not overlapping then this sub array can be directly added to result merged arr.
 // If the interval is overlapping means it reaches else then mark the interval[i + 1][0] = interval [i][0] and interval[i+1][1] = max(interval[i+1][1], interval[i][1]);
 // Now the last index needs to be merged as we havent used the ast index for merging scenario inside loop.
@@ -1108,7 +1381,7 @@ vector<vector<int>> insertInterval(vector<vector<int>>& intervals, vector<int>& 
 	int i = 0;
 	int nSize = intervals.size();
 	vector<vector<int>> resultInsertedMerged;
-	// WE need to push all intervals that has clear gap before the start of new interval. That can be identified by the condition intervals[i][1] < newInterval[0]
+	// We need to push all intervals that has clear gap before the start of new interval. That can be identified by the condition intervals[i][1] < newInterval[0]
 	// First case where we need to check if the old interval ending is less than new interval starting. When this happens it means there is a gap between
 	// new and old interval. So push all the intervals until this condition succeeds.
 	while (i < nSize && intervals[i][1] < newInerval[0])
@@ -1593,6 +1866,68 @@ string findKthLargestIII(vector<string>& nums, int k)
 
 }
 
+vector<vector<int>> findTripletSumLessThanK(vector<int> inputArr, int nKSum)
+{
+	// By sorting the array, we give ourselve good chance to reduce the search spectrum
+	// by keeping check points as pointers in both the ends and the keeping a range 
+	// in the reduced range and spot the 3rd memeber in the equation.
+	sort(inputArr.begin(), inputArr.end());
+	vector<vector<int>> resultVector;
+	for (int nIdx = 0; nIdx <= inputArr.size() - 2; nIdx++)
+	{
+		int nLeft = nIdx + 1;
+		int nRight = inputArr.size() - 1;
+		while (nLeft < nRight)
+		{
+			// here all the values in the nRight is contributing to higher values which makes the equation result in the higher side
+			// than the given sum. hence we reduce the nRight--; To try smaller values towards left.
+			if (inputArr[nIdx] + inputArr[nLeft] + inputArr[nRight] >= nKSum)
+			{
+				nRight--;
+			}
+			else
+			{
+				// Control reaches here for all the values that are resulting to sum less than given sumK
+				// Now all the elements between nLeft and nRight is less than the given sum.
+				// We are printing that range of values here.
+				// We need to find only the third value in the sum combination for that we're moving
+				// indexes from left to right. Keeping the nIdx and nLeft as same in the equation nIdx + nLeft + ??? < nSum.
+				for (int nSubArr = nLeft + 1; nSubArr <= nRight; nSubArr++)
+				{
+					resultVector.push_back({ inputArr[nIdx], inputArr[nLeft], inputArr[nSubArr] });
+				}
+				nLeft++;
+			}
+		}
+	}
+	return resultVector;
+}
+
+
+vector<vector<int>> findTripletSumOfgivenSum(vector<int> nInputArr, int nGivenSum)
+{
+	vector<vector<int>> tripletsWithGivenSum;
+	sort(nInputArr.begin(), nInputArr.end());
+	for (int i = 0; i < nInputArr.size() - 2; i++)
+	{
+		int nLeft = i + 1;
+		int nRight = nInputArr.size() - 1;
+		while (nLeft < nRight)
+		{
+			if (nInputArr[i] + nInputArr[nLeft] + nInputArr[nRight] == nGivenSum)
+			{
+				tripletsWithGivenSum.push_back({ nInputArr[i] , nInputArr[nLeft] , nInputArr[nRight] });
+				nLeft++;
+				nRight--;
+			}
+			else
+			{
+				((nInputArr[i] + nInputArr[nLeft] + nInputArr[nRight]) < nGivenSum ) ? nLeft++ : nRight--;
+			}
+		}
+	}
+	return tripletsWithGivenSum;
+}
 
 // Find Triplets sums to 0
 // Find Three sum to zero
@@ -1703,6 +2038,32 @@ vector<vector<int>> findFourSum(vector<int> nInputArr, int nTargetSum)
 	return outputArr;
 }
 
+
+//
+// https://leetcode.com/problems/squares-of-a-sorted-array/description/
+// Given an integer array nums sorted in non-decreasing order, return an array of the squares of each number sorted in non-decreasing order.
+vector<int> sortedSquares(vector<int> nInputArr)
+{
+	int nLeftIdx = 0;
+	int nRightIdx = nInputArr.size() - 1;
+	int nRightPtr = nRightIdx;
+	vector<int> retArr(nRightIdx + 1, 0);
+	while (nRightPtr >= 0)
+	{
+		if (abs(nInputArr[nLeftIdx]) > abs(nInputArr[nRightIdx]))
+		{
+			retArr[nRightPtr--] = nInputArr[nLeftIdx] * nInputArr[nLeftIdx];
+			nLeftIdx++;
+		}
+		else
+		{
+			retArr[nRightPtr--] = nInputArr[nRightIdx] * nInputArr[nRightIdx];
+			nRightIdx--;
+		}
+	}
+	return retArr;
+}
+
 // Approach to solve: Maintain 2 pointers nLEft and nRight start the loop  from 0 to size of array.
 // Move the right pointer from ledt on every element found to be 0.
 // However Move both nLeft and nRight pointers in all other scenarios where elem != 0. Before incrementing the ptr swap the values from ptr locations.
@@ -1715,6 +2076,8 @@ void moveZeroesToEnd(vector<int>& inputArray)
 {
 	for (int nLastNonZeroFoundAt = 0, nCurr = 0; nCurr < inputArray.size(); nCurr++)
 	{
+		// Note that we are not moving one pointer when there is 0. So this makes one pointer to be slow and now when we swap all the non zero elems with this slow pointer,
+		// Then non-zero values will move to front by this swap. And every time new zero appears in the loop the gap between ptrs increses. This moves all the zeroes together.
 		if (inputArray[nCurr] != 0)
 		{
 			swap(inputArray[nLastNonZeroFoundAt++], inputArray[nCurr]);
@@ -2035,6 +2398,30 @@ string reverseWords(string s) {
 
 }
 
+vector<string> romanizer(vector<int> numbers) {
+	vector<string> romanSymbol = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "VIII", "VII", "VI", "V", "IV", "III", "II", "I" };
+	vector<int> numbericValue = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+	string sb;
+	vector<string>  retRmoanNumList;
+	if (numbers.empty())
+		return retRmoanNumList;
+	for (int currNumber : numbers)
+	{
+		for (int i = 0; i < numbericValue.size() && currNumber > 0; i++)
+		{
+			while (numbericValue[i] <= currNumber)
+			{
+				currNumber -= numbericValue[i];
+				sb += romanSymbol[i];
+			}
+		}
+		retRmoanNumList.push_back(sb);
+		sb.clear();
+	}
+	return retRmoanNumList;
+}
+
+
 class Solution {
 
 public:
@@ -2224,6 +2611,10 @@ void sort0s1sAnd2s(vector<int> & inputArr)
 
 	while (nMidPtr <= nHighPtr)
 	{
+		// here the lowPtr will move until it finds 1.
+		// eventhough midPtr is initialized same as low ptr but it is moving further differently when compared with nLowPtr
+		// as we move midPtr whenever we find arr[nMidPtr] == 1, However nLow moves only when we swap 0 to front.
+		// the moving of 0 to front is taken care by difference it created between nLow and nMidPtr.
 		if (inputArr[nMidPtr] == 0)
 		{
 			swap(inputArr[nLowPtr], inputArr[nMidPtr]);
@@ -2236,12 +2627,113 @@ void sort0s1sAnd2s(vector<int> & inputArr)
 		}
 		else if (inputArr[nMidPtr] == 2)
 		{
+			// Dont Worry about where the current index of midPtr is if there is 2 found in nMidPtr automatically swap it with nHighPtr
+			// As the program started with nSize - 1 as nHighPtr and nMidPtr = 0 so naturally during the check its highly improbable that nMidPtr == nHighPtr.
 			swap(inputArr[nHighPtr], inputArr[nMidPtr]);
 			nHighPtr--;
 		}
 	}
 }
 
+
+
+/*
+* 128. Longest Consecutive Sequence
+Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
+
+You must write an algorithm that runs in O(n) time.
+
+Example 1:
+Input: nums = [100,4,200,1,3,2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
+
+Example 2:
+Input: nums = [0,3,7,2,5,8,4,6,0,1]
+Output: 9
+
+
+* This problem can be solved using many different approaches. We'll 2 of those approaches (using unordered_map anothe one using set).
+*/
+// The below approach will solve the problem but however the time complexity it takes to sovle this issue is very high
+/*
+*     Time Complexity : O(N), Although the time complexity appears to be quadratic due to the while loop nested
+    within the for loop, closer inspection reveals it to be linear. Because the while loop is reached only when
+    marks the beginning of a sequence (i.e. currentNumber-1 is not present in nums), the while loop can only run
+    for N iterations throughout the entire runtime of the algorithm. This means that despite looking like O(N^2)
+    complexity, the nested loops actually run in O(N+N)=O(N) time. All other computations occur in constant
+    time, so the overall runtime is linear. Where N is the size of the Array(nums).
+
+    Space Complexity : O(N), Unordered set space.
+
+    Solved using Array + Hash Table(Unordered set). Optimise Approach.
+*/
+int longestConsecutiveSequence(vector<int>& nInputArr)
+{
+	int nSize = nInputArr.size();
+	set<int> numberTrackerForArrElems;
+	for (auto elem : nInputArr)
+	{
+		numberTrackerForArrElems.insert(elem);
+	}
+	int nLongestConsecutiveSequence = 0;
+	for (auto arrElem : nInputArr)
+	{
+		// Thie below condition is ensuring that the current element is not in between or highest elem place in the array at some locations.
+		// In other words checking for other numbers in backward direction.
+		// This below line checks in the array if there are next Lower cosecutive number present in arr.
+		if (numberTrackerForArrElems.find(arrElem - 1) == numberTrackerForArrElems.end())
+		{
+			int nCurrElem = arrElem;
+			int nCurrConsecutiveSequence = 1;
+			// This below line checks in the array if there are next higher cosecutive number present in arr.
+			while (numberTrackerForArrElems.find(nCurrElem + 1) != numberTrackerForArrElems.end())
+			{
+				nCurrElem++;
+				nCurrConsecutiveSequence++;
+			}
+			nLongestConsecutiveSequence = max(nLongestConsecutiveSequence, nCurrConsecutiveSequence);
+		}
+	}
+
+	return nLongestConsecutiveSequence;
+}
+
+// The below approach resolves the time complexity problem. by marking the map elements to false, These elements potentially could cause time delays.
+int longestConsecutiveSequenceNew(vector<int>& nInputArr)
+{
+	map<int, bool> markerContainerForArrElems;
+	int nLongestConsecutiveSequence = 0;
+	for (auto arrElem : nInputArr)
+	{
+		markerContainerForArrElems[arrElem] = true;
+	}
+	for (auto arrElem : nInputArr)
+	{
+		if (markerContainerForArrElems.count(arrElem - 1) > 0)
+		{
+			markerContainerForArrElems[arrElem] = false;
+		}
+	}
+	for (int i = 0; i < nInputArr.size(); i++)
+	{
+		if (markerContainerForArrElems[nInputArr[i]] == true)
+		{
+			int j = 0;
+			int nCurrLongestSeqCount = 0;
+			while (markerContainerForArrElems.count(nInputArr[i] + j) > 0)
+			{
+				j++;
+				nCurrLongestSeqCount++;
+			}
+			if (nCurrLongestSeqCount > nLongestConsecutiveSequence)
+				nLongestConsecutiveSequence = nCurrLongestSeqCount;
+		}
+	}
+
+	return nLongestConsecutiveSequence;
+
+}
 
 // Given a binary array nums, return the maximum number of consecutive 1's in the array.
 // Approach: 
@@ -2253,7 +2745,7 @@ void sort0s1sAnd2s(vector<int> & inputArr)
 int findMAxContinous1s(vector<int> inputArr)
 {
 	int nCurrCount = 0;
-	int nMaxCount = 0;
+	int nMaxCount = INT_MIN;
 
 	for (int i = 0; i < inputArr.size(); i++)
 	{
@@ -2282,14 +2774,14 @@ or return false otherwise.
 For example, in s = "110100010" the longest continuous segment of 1s has length 2, and the longest continuous segment of 0s has length 3.
 Note that if there are no 0's, then the longest continuous segment of 0's is considered to have a length 0. The same applies if there is no 1's.
 */
-// Approach: This problem is very similar to above problem except that we need to maintian currCounter and maxCounter for both 0's and 1's
+// Approach: This problem is very similar to above problem(findMAxContinous1s) except that we need to maintian currCounter and maxCounter for both 0's and 1's
 // Once after finshing the count throughout the arr before return check which one is higher and then return accordingly.
 
 
 bool findHighestContinous1sOr0s(vector<int> inputArr)
 {
-	int nMaxZerCount = 0;
-	int nMaxOneCount = 0;
+	int nMaxZerCount = INT_MIN;
+	int nMaxOneCount = INT_MIN;
 	int nCurrZeroCount = 0;
 	int nCurrOneCount = 0;
 
@@ -4037,6 +4529,7 @@ bool isParanthesesBalanced(string strInput)
 			// If the corresponding open parantheses not found for the closed parantheses then there is imbalance.
 			if (mapOfParanthesesBalancer[cCurrVal] != cTopVal)
 			{
+				// At arriving the first imbalanced mismatched braces we should return true; as the parantheses expression is wrong/invalid.
 				return false;
 			}
 			stkParanthesesBalancer.pop();
@@ -4971,6 +5464,90 @@ vector<int> productExceptSelf(vector<int>& nums)
 }
 
 /*
+* 
+42. Trapping Rain Water
+Leetcode: https://leetcode.com/problems/trapping-rain-water/description/?envType=study-plan-v2&envId=top-interview-150
+Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
+Example 1:
+Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]
+Output: 6
+Explanation: The above elevation map (black section) is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped.
+
+Example 2:
+
+Input: height = [4,2,0,3,2,5]
+Output: 9
+*/
+
+
+int trappedWater(vector<int>& heightsArray)
+{
+	int nLeft = 0;
+	int nRight = heightsArray.size() - 1;
+	int nLeftMax = 0;
+	int nRightMax = 0;
+	int nWaterUnits = 0;
+	while (nLeft < nRight)
+	{
+		if (heightsArray[nLeft] < heightsArray[nRight])
+		{
+			(heightsArray[nLeft] >= nLeftMax) ? nLeftMax = heightsArray[nLeft] : nWaterUnits += (nLeftMax - heightsArray[nLeft]);
+			++nLeft;
+		}
+		else
+		{
+			(heightsArray[nRight] >= nRightMax) ? nRightMax = heightsArray[nRight] : nWaterUnits += (nRightMax - heightsArray[nRight]);
+			--nRight;
+		}
+	}
+	return nWaterUnits;
+}
+/*
+* Overall idea of this algorithm is if the right side wall is higher then we need to find the second highest elevation
+* and use it as reference point for distance and we need to find the water storing possibility in between these 2 heights. 
+* We need to find total water so we need to take into account all the gaps between buildings.
+Below are the list of things we need to follow to solve this problem.
+Maintain 2 pointer nLeft = 0 and nRight = arraySize - 1;
+Maintain 2 comparison val nLMax = array[nLeft] and nRMax = array[nRight].
+
+*/
+
+// Below is the detailed approach in coding for solving trappedRainWater between building elevations
+//int trappedRainWaterBetweenElevations(vector<int>& elevationArray)
+//{
+//	int nLeft = 0;
+//	int nRight = elevationArray.size() - 1;
+//	int nLMax = elevationArray[nLeft];
+//	int nRMax = elevationArray[nRight];
+//	int nTotalWater = 0;
+//	while (nLeft < nRight)
+//	{
+//		if (elevationArray[nLeft] >= nLMax)
+//		{
+//			nLMax = elevationArray[nLeft];
+//			nLeft++;
+//		}
+//		else if (elevationArray[nRight] >= nRMax)
+//		{
+//			nRMax = elevationArray[nRight];
+//			nRight--;
+//		}
+//		else if (nLMax < nRMax && elevationArray[nLeft] < nLMax)
+//		{
+//			// Remember we have stored the elevation/ building  heights already inside lMax;
+//			nTotalWater += nLMax - elevationArray[nLeft];
+//			nLeft++;
+//		}
+//		else
+//		{
+//			nTotalWater += nRMax - elevationArray[nRight];
+//			nRight--;
+//		}
+//		return nTotalWater;
+//	}
+//}
+
+/*
 * Container With Most Water
 * https://leetcode.com/problems/container-with-most-water/
 You are given an integer array height of length n. There are n vertical lines drawn such that the two endpoints of the ith line are (i, 0) and (i, height[i]).
@@ -5013,6 +5590,64 @@ int maxWaterStoredInContainer(vector<int>& nHeights)
 			nMaxWaterStored = nMaxAreaSofar;
 	}
 	return nMaxWaterStored;
+}
+
+
+/*
+* 134. Gas Station
+* Leetcode Problem: https://leetcode.com/problems/gas-station/description/?envType=study-plan-v2&envId=top-interview-150
+There are n gas stations along a circular route, where the amount of gas at the ith station is gas[i].
+
+You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from the ith station to its next (i + 1)th station. You begin the journey with an empty tank at one of the gas stations.
+
+Given two integer arrays gas and cost, return the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return -1. If there exists a solution, it is guaranteed to be unique
+
+
+
+Example 1:
+
+Input: gas = [1,2,3,4,5], cost = [3,4,5,1,2]
+Output: 3
+Explanation:
+Start at station 3 (index 3) and fill up with 4 unit of gas. Your tank = 0 + 4 = 4
+Travel to station 4. Your tank = 4 - 1 + 5 = 8
+Travel to station 0. Your tank = 8 - 2 + 1 = 7
+Travel to station 1. Your tank = 7 - 3 + 2 = 6
+Travel to station 2. Your tank = 6 - 4 + 3 = 5
+Travel to station 3. The cost is 5. Your gas is just enough to travel back to station 3.
+Therefore, return 3 as the starting index.
+Example 2:
+
+Input: gas = [2,3,4], cost = [3,4,3]
+Output: -1
+Explanation:
+You can't start at station 0 or 1, as there is not enough gas to travel to the next station.
+Let's start at station 2 and fill up with 4 unit of gas. Your tank = 0 + 4 = 4
+Travel to station 0. Your tank = 4 - 3 + 2 = 3
+Travel to station 1. Your tank = 3 - 3 + 3 = 3
+You cannot travel back to station 2, as it requires 4 unit of gas but you only have 3.
+Therefore, you can't travel around the circuit once no matter where you start.
+*/
+
+
+int findTheStartingPointForRoundTrip(vector<int>& gasLevel, vector<int>& amountOfGasForNextStop)
+{
+	int nSize = gasLevel.size();
+	int nTotalSurplus = 0;
+	int nSurplus = 0;
+	int nStart = 0;
+
+	for (int i = 0; i < nSize; i++)
+	{
+		nTotalSurplus += gasLevel[i] - amountOfGasForNextStop[i];
+		nSurplus += gasLevel[i] - amountOfGasForNextStop[i];
+		if (nSurplus < 0)
+		{
+			nSurplus = 0;
+			nStart = i + 1;
+		}
+	}
+	return (nTotalSurplus < 0) ? -1 : nStart;
 }
 
 /*
@@ -5909,8 +6544,17 @@ int main()
 	vector<int> nGeneralArray = { 1, 2, 3, 4, 5, 6, 7, 8 };
 	arrangeOddAndEvenValInOddAndEvenIndexes(nGeneralArray);
 
-	vector<int> nGeneralNewArray = { 1, 2, 3, 4, 5, 6, 7, 8 };
+	vector<int> nGeneralNewArray = { 1, 1, 2, 3, 4, 5, 5, 6, 6, 7, 8, 8, 8 };
 	ArrangeOddAndEvenValsInRepectiveIdx(nGeneralNewArray);
+
+	nGeneralNewArray = { 2, 1, 2, 1, 2, 2, 2, 1, 2, 8, 2, 1, 2, 1, 2};
+	ArrangeOddAndEvenValsInRepectiveIdx(nGeneralNewArray);
+
+	nGeneralNewArray = { 1, 1, 1, 1, 1, 2, 1, 1, 1, 8, 1, 1, 1, 1, 1 };
+	ArrangeOddAndEvenValsInRepectiveIdx(nGeneralNewArray);
+	
+	nGeneralNewArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+	nGeneralNewArray = sortArrayByParity(nGeneralNewArray);
 
 	int nRetVal = longestValidParentheses(")()())");
 
@@ -6018,6 +6662,9 @@ int main()
 	vector<int> inputArrayWithNegativeNums = { -1, 0, 1, 2, -1, -4 };
 	vector<vector<int>>  triplets = FindTripletsSummingToZero(inputArrayWithNegativeNums, 0);
 
+	vector<int> inputVector_ThreeSumLessThanK = { 5, 1, 3, 4, 7 };
+	vector<vector<int>> returnResultVector = findTripletSumLessThanK(inputVector_ThreeSumLessThanK, 12);
+
 	// Below function is useful to move the zero elements in the array to the end of array.
 	vector<int> nInputArr = { 4, 6, 1, 0, 33, 16, 7, 2, 63, 0, 1, 22, 65, 0, 26, 54, 0, 18 };
 	moveZeroesToEnd(nInputArr);
@@ -6032,7 +6679,7 @@ int main()
 	inputVectorArray = { 3,2,1,5,6,4 };
 	nRetCountVal = FindSubArraySum(inputVectorArray, 9);
 
-	inputVectorArray = { 3,4,7,2,-3,1 };
+	inputVectorArray = { 1,3,4,7,2,-3,1 };
 	nRetCountVal = FindSubArraySum(inputVectorArray, 7);
 
 
@@ -6056,6 +6703,9 @@ int main()
 	srRomanResult = resultObj.intToRoman(994);
 	srRomanResult = resultObj.intToRoman(1664);
 	srRomanResult = resultObj.intToRoman(94699);
+	srRomanResult = resultObj.intToRoman(98);
+	vector<int> nNumToRoman = { 75, 80, 99, 100, 50 };
+	vector<string> strRomanVals = romanizer(nNumToRoman);
 
 	// Below snipper of code is useful for reversing a string
 	char sz[] = "Hello World!";
@@ -6115,11 +6765,21 @@ int main()
 	vector<int> inputArrWith0s1sAnd2s = { 2,0,2,1,1,0 };
 	sort0s1sAnd2s(inputArrWith0s1sAnd2s);
 
+	inputArrWith0s1sAnd2s = { 2,0,2,1,1,0,1,0,0,1 };
+	sort0s1sAnd2s(inputArrWith0s1sAnd2s);
+
 	vector<int> arrWithContinous1s = { 1, 1, 0, 1, 0, 1, 1, 0, 1, 1, 1, 1 };
 	int nMAxContinous1s = findMAxContinous1s(arrWithContinous1s);
 
 	vector<int> arrWithContinous0sAnd1s = { 1, 1, 0, 1, 0, 0, 0, 1, 0 };
 	bool bContinousZeroOrOneResult = findHighestContinous1sOr0s(arrWithContinous0sAnd1s);
+
+	nInputArr = { 100,4,200,1,3,2 };
+	int nLongestConsecutiveSequence =  longestConsecutiveSequence(nInputArr);
+
+	nInputArr = { 0,3,7,2,5,8,4,6,0,1 };
+	nLongestConsecutiveSequence = longestConsecutiveSequence(nInputArr);
+
 	vector<int> sampleInput = { 1, 2, 3, 1, 2, 1 };
 	groupElementsBasedOnOccurence(sampleInput);
 	sampleInput = { 5, 2, 5, 3, 5, 4, 4, 3, 1, 2, 2 };
@@ -6171,10 +6831,13 @@ int main()
 	rotateArraysLeftDir(rotateArr, 3);
 
 
+	rotateArr = { 1,7,3,6,5,6 };
+	int nPivotPoint = findPivotIndexNew(rotateArr);
+
 	rotateArr = { 1, 2, 3, 4, 5, };
-	int nPivotPoint = findPivotIndex(rotateArr);
 	rotateArraysLeftDir(rotateArr, 4);
-	nPivotPoint = findPivotIndex(rotateArr);
+	nPivotPoint = findPivotIndexNew(rotateArr);
+
 	rotateArr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	rotate(rotateArr, 2);
 	int nRetIdx = searchANumberInRotatedArray(rotateArr, 2);
@@ -6261,9 +6924,29 @@ int main()
 
 	inputArrWithNegVals = { 2, 7, 3, -8, 4, 10 };
 	shortestSubarrayWithSumGreaterOrEqToK(inputArrWithNegVals, 12);
+
+	nInputArr = { 2, 1, 1, 0, 3,1,2,4,3 };
+	int nMinLenOfSubArrSum = findMinLenOfSubArrSumOfK(nInputArr, 7);
+
+	nInputArr = { 1,4,4 };
+	nMinLenOfSubArrSum = findMinLenOfSubArrSumOfK(nInputArr, 4);
+
+	nInputArr = { 1,1,1,1,1,1,1,1 };
+	nMinLenOfSubArrSum = findMinLenOfSubArrSumOfK(nInputArr, 11);
+
+	nInputArr = { 2,3,1,2,4,3 };
+	nMinLenOfSubArrSum = findMinLenOfSubArrSumOfK(nInputArr, 7);
+
+	nInputArr = { 2,3,1,2,4,3 };
+	nMinLenOfSubArrSum = findMinLenOfSubArrSumOfK(nInputArr, 8);
+
+	nInputArr = { 2,3,4,1,2,4,9,3 };
+	nMinLenOfSubArrSum = findMinLenOfSubArrSumOfK(nInputArr, 8);
+
 	vector<string> strAnagramList = { "abc", "bca", "cba", "abz", "zba", "baz", "baz" };
 	groupAnagrams(strAnagramList);
 	int nLargestCount = groupAnagramsNew(strAnagramList);
+
 
 	string strPalindromicAnagram = "radar";
 	bool bIsPalindromePossible = canBePermutedPalindrome(strPalindromicAnagram);
@@ -6401,6 +7084,9 @@ int main()
 
 	vector<int> nRedundantValArr = { 1, 2, 3, 3, 5, 5, 6, 6, 6, 6, 8, 9, 9, 9 };
 	vector<int> nStartAndEndIdx = searchRangeOfIdxOfGivenVal(nRedundantValArr, 6);
+
+	vector<int> nArrWithNegVals = { -4, -1, 0, 3, 10 };
+	vector<int> retArrWithPosVals = sortedSquares(nArrWithNegVals);
 	
 	return 0;
 }

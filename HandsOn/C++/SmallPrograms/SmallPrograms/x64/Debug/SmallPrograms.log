@@ -9,107 +9,108 @@ F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallProg
 F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(436,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(459,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(511,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(630,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(682,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(819,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(874,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(901,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(947,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(979,19): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1048,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1302,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1382,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1450,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1612,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1666,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1737,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1764,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1817,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1879,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1914,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1937,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1976,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2007,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2048,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2091,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2501,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2524,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2525,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2609,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2673,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2936,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2936,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3046,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3064,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3218,84): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3249,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3259,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3291,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3375,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3390,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3470,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3511,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3529,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3530,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3607,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3733,57): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3735,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3743,66): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3927,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3928,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4006,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4063,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4064,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4153,54): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4233,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4234,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4379,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4438,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4749,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4810,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4897,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4898,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4910,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4911,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4966,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4967,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5013,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5014,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5026,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5027,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5090,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5091,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5105,37): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5139,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5239,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5240,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5316,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5438,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5486,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5569,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5635,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5662,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5663,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5761,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5783,35): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5787,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5790,89): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5790,181): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6099,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6243,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6275,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6486,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6487,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6718,80): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6901,79): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6903,74): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6991,88): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(668,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(720,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(857,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(912,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(939,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(985,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1017,19): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1086,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1340,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1420,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1492,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1556,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1718,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1772,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1843,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1870,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1923,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1985,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2020,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2043,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2082,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2113,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2154,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2197,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2643,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2666,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2667,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2751,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2844,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3107,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3107,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3217,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3235,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3389,84): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3420,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3430,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3462,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3546,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3561,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3641,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3682,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3700,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3701,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3778,53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3904,57): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3906,51): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3914,66): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4098,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4099,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4177,43): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4234,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4235,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4324,54): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4404,40): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4405,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4550,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4609,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4920,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4981,2): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5068,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5069,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5081,26): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5082,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5137,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5138,28): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5184,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5185,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5197,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5198,33): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5261,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5262,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5276,37): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5310,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5410,32): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5411,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5487,20): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5609,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5657,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5740,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5806,29): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5833,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5834,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5932,25): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5954,35): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5958,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5961,89): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(5961,181): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6325,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6469,16): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6501,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6712,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6713,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(6948,80): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(7131,79): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(7133,74): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(7221,88): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
 C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\utility(190,16): warning C4244: 'initializing': conversion from '__int64' to '_Ty1', possible loss of data
           with
           [
               _Ty1=int
           ]
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(977): message : see reference to function template instantiation 'std::pair<_Kty,_Ty>::pair<__int64&,__int64&,0>(_Other1,_Other2) noexcept' being compiled
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1015): message : see reference to function template instantiation 'std::pair<_Kty,_Ty>::pair<__int64&,__int64&,0>(_Other1,_Other2) noexcept' being compiled
           with
           [
               _Kty=int,
@@ -117,7 +118,7 @@ F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallProg
               _Other1=__int64 &,
               _Other2=__int64 &
           ]
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(977): message : see reference to function template instantiation 'std::pair<_Kty,_Ty>::pair<__int64&,__int64&,0>(_Other1,_Other2) noexcept' being compiled
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1015): message : see reference to function template instantiation 'std::pair<_Kty,_Ty>::pair<__int64&,__int64&,0>(_Other1,_Other2) noexcept' being compiled
           with
           [
               _Kty=int,
@@ -130,8 +131,8 @@ C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.3110
           [
               _Ty2=int
           ]
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1256): warning C4715: 'removeDuplicates': not all control paths return a value
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2880): warning C4715: 'findDuplicate': not all control paths return a value
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(2905): warning C4715: 'findLowestMissingNumber': not all control paths return a value
-F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3979): warning C4715: 'FindIfExtendedPalindrome': not all control paths return a value
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(1294): warning C4715: 'removeDuplicates': not all control paths return a value
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3051): warning C4715: 'findDuplicate': not all control paths return a value
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(3076): warning C4715: 'findLowestMissingNumber': not all control paths return a value
+F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\SmallPrograms\SmallPrograms.cpp(4150): warning C4715: 'FindIfExtendedPalindrome': not all control paths return a value
   SmallPrograms.vcxproj -> F:\Learnings\HandsOn\venkat-aiyer-github\githubTest-Venkat\HandsOn\C++\SmallPrograms\x64\Debug\SmallPrograms.exe

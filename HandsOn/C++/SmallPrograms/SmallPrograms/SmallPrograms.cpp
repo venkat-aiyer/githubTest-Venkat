@@ -578,6 +578,44 @@ int findMaxSubArrayLengthOf0sAnd1s(vector<int> arrayNumbers)
 
 }
 
+/*
+* 605. Can Place Flowers
+* Leetcode :https://leetcode.com/problems/can-place-flowers/description/?envType=study-plan-v2&envId=leetcode-75
+You have a long flowerbed in which some of the plots are planted, and some are not. However, flowers cannot be planted in adjacent plots.
+
+Given an integer array flowerbed containing 0's and 1's, where 0 means empty and 1 means not empty, and an integer n, return true if n new flowers can be planted in the flowerbed without violating the no-adjacent-flowers rule and false otherwise.
+
+Example 1:
+
+Input: flowerbed = [1,0,0,0,1], n = 1
+Output: true
+Example 2:
+
+Input: flowerbed = [1,0,0,0,1], n = 2
+Output: false
+*/
+// We need to check the possibility to place given number of 'n' flowers. Remember adjacent places cannot be used.
+bool canPlaceFlowers(vector<int>& flowerbed, int n)
+{
+	int nTotalFlowersPlaced = 0;
+	for (int i = 0; i < flowerbed.size() && nTotalFlowersPlaced < n; i++)
+	{
+		// To place a flower first we need to check if its empty
+		if (flowerbed[i] == 0)
+		{
+			int nPrev = (i == 0) ? 0 : flowerbed[i - 1];
+			int nNext = (i == flowerbed.size() - 1) ? 0 : flowerbed[i + 1];
+			if (nPrev == 0 && nNext == 0)
+			{
+				flowerbed[i] = 1;
+				nTotalFlowersPlaced++;
+			}
+		}
+	}
+
+	return nTotalFlowersPlaced == n;
+}
+
 // Given an integer array nums, find the contiguous subarray (containing at least one number) which
 // has the largest sum and return its sum.
 // This algorithm finds the maximum continuous sum value of the sub array elements in the given array.
@@ -1413,6 +1451,74 @@ vector<vector<int>> insertInterval(vector<vector<int>>& intervals, vector<int>& 
 	return resultInsertedMerged;
 }
 
+
+/*
+* 228. Summary Ranges
+* Leetcode:  https://leetcode.com/problems/summary-ranges/description/?envType=study-plan-v2&envId=top-interview-150
+You are given a sorted unique integer array nums.
+
+A range [a,b] is the set of all integers from a to b (inclusive).
+
+Return the smallest sorted list of ranges that cover all the numbers in the array exactly. That is, each element of nums is covered by exactly one of the ranges, and there is no integer x such that x is in one of the ranges but not in nums.
+
+Each range [a,b] in the list should be output as:
+
+"a->b" if a != b
+"a" if a == b
+
+
+Example 1:
+
+Input: nums = [0,1,2,4,5,7]
+Output: ["0->2","4->5","7"]
+Explanation: The ranges are:
+[0,2] --> "0->2"
+[4,5] --> "4->5"
+[7,7] --> "7"
+Example 2:
+
+Input: nums = [0,2,3,4,6,8,9]
+Output: ["0","2->4","6","8->9"]
+Explanation: The ranges are:
+[0,0] --> "0"
+[2,4] --> "2->4"
+[6,6] --> "6"
+[8,9] --> "8->9"
+*/
+
+vector<string> summaryRanges(vector<int>& nInputIntervals)
+{
+	vector<string> retString;
+	int nSize = nInputIntervals.size();
+	string szTemp = "";
+
+	for (int i = 0; i < nSize; i++)
+	{
+		int j = i;
+
+		while (j + 1 < nSize && nInputIntervals[j + 1] == nInputIntervals[j] + 1)
+		{
+			j++;
+		}
+
+		if (j > i)
+		{
+			szTemp += to_string(nInputIntervals[i]);
+			szTemp += "-->";
+			szTemp += to_string(nInputIntervals[j]);
+		}
+		else
+		{
+			szTemp += to_string(nInputIntervals[i]);
+		}
+
+		i = j;
+		retString.push_back(szTemp);
+		szTemp = "";
+	}
+	return retString;
+}
+
 /*
 Non-overlapping Intervals
 https://leetcode.com/problems/non-overlapping-intervals/
@@ -2240,6 +2346,42 @@ vector<int> findSlidingWindMax(vector<int>& nInputArr, int nWindSize)
 	return nMaxInEachWind;
 }
 
+/*
+* 643. Maximum Average Subarray I
+You are given an integer array nums consisting of n elements, and an integer k.
+
+Find a contiguous subarray whose length is equal to k that has the maximum average value and return this value. Any answer with a calculation error less than 10-5 will be accepted.
+
+Example 1:
+
+Input: nums = [1,12,-5,-6,50,3], k = 4
+Output: 12.75000
+Explanation: Maximum average is (12 - 5 - 6 + 50) / 4 = 51 / 4 = 12.75
+Example 2:
+
+Input: nums = [5], k = 1
+Output: 5.00000
+*/
+
+double findMaxAverageOfKWidthWindow(vector<int> nInputArr, int nKWindowWidth)
+{
+	double nMaxSumOfKElems = 0;
+	double nCurrSum = 0;
+	for (int i = 0; i < nKWindowWidth; i++)
+	{
+		nCurrSum += nInputArr[i];
+	}
+	nMaxSumOfKElems = nCurrSum;
+	for (int i = nKWindowWidth; i < nInputArr.size(); i++)
+	{
+		nCurrSum += nInputArr[i] - nInputArr[i - nKWindowWidth];
+
+		nMaxSumOfKElems = max(nMaxSumOfKElems, nCurrSum);
+	}
+
+	return nMaxSumOfKElems / nKWindowWidth;
+}
+
 bool pronic_check(int n)
 {
 	int x = (int)(sqrt(n));
@@ -2635,6 +2777,35 @@ void sort0s1sAnd2s(vector<int> & inputArr)
 	}
 }
 
+
+/*
+* 1004. Max Consecutive Ones III
+Given a binary array nums and an integer k, return the maximum number of consecutive 1's in the array if you can flip at most k 0's.
+
+
+
+Example 1:
+
+Input: nums = [1,1,1,0,0,0,1,1,1,1,0], k = 2
+Output: 6
+Explanation: [1,1,1,0,0,1,1,1,1,1,1]
+Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
+Example 2:
+
+Input: nums = [0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1], k = 3
+Output: 10
+Explanation: [0,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1]
+Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
+*/
+int findLongestConsecutive1sByChanignKElem(vector<int> nInputArr, int nKElementsToChange)
+{
+	int i = 0, j;
+	for (j = 0; j < nInputArr.size(); ++j) {
+		if (nInputArr[j] == 0) nKElementsToChange--;
+		if (nKElementsToChange < 0 && nInputArr[i++] == 0) nKElementsToChange++;
+	}
+	return j - i;
+}
 
 
 /*
@@ -6012,6 +6183,61 @@ public:
 };
 */
 
+
+/*
+* 1431. Kids With the Greatest Number of Candies
+There are n kids with candies. You are given an integer array candies, where each candies[i] represents the number of candies the ith kid has, and an integer extraCandies, denoting the number of extra candies that you have.
+
+Return a boolean array result of length n, where result[i] is true if, after giving the ith kid all the extraCandies, they will have the greatest number of candies among all the kids, or false otherwise.
+
+Note that multiple kids can have the greatest number of candies.
+
+Example 1:
+
+Input: candies = [2,3,5,1,3], extraCandies = 3
+Output: [true,true,true,false,true]
+Explanation: If you give all extraCandies to:
+- Kid 1, they will have 2 + 3 = 5 candies, which is the greatest among the kids.
+- Kid 2, they will have 3 + 3 = 6 candies, which is the greatest among the kids.
+- Kid 3, they will have 5 + 3 = 8 candies, which is the greatest among the kids.
+- Kid 4, they will have 1 + 3 = 4 candies, which is not the greatest among the kids.
+- Kid 5, they will have 3 + 3 = 6 candies, which is the greatest among the kids.
+Example 2:
+
+Input: candies = [4,2,1,1,2], extraCandies = 1
+Output: [true,false,false,false,false]
+Explanation: There is only 1 extra candy.
+Kid 1 will always have the greatest number of candies, even if a different kid is given the extra candy.
+Example 3:
+
+Input: candies = [12,1,12], extraCandies = 10
+Output: [true,false,true]
+*/
+
+vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies)
+{
+	vector<bool> resArr;
+	int nMaxCandiesSoFar = INT_MIN;
+	for (int i = 0; i < candies.size(); i++)
+	{
+		if (nMaxCandiesSoFar <= candies[i])
+			nMaxCandiesSoFar = candies[i];
+	}
+	for (int i = 0; i < candies.size(); i++)
+	{
+		candies[i] += extraCandies;
+	}
+	for (int i = 0; i < candies.size(); i++)
+	{
+		if (nMaxCandiesSoFar <= candies[i])
+			resArr.push_back(true);
+		else
+			resArr.push_back(false);
+	}
+	return resArr;
+
+}
+
 void minHeapify(vector<int> nInputArr, int N, int i)
 {
 	int nLeft = 2 * i;
@@ -6597,6 +6823,10 @@ int main()
 	// This problem can be solved by using hash map. The approach for this problem is bit similar to 2 sum in array.
 	vector<int> nArrayOf0sAnd1s = { 0, 0, 1, 0, 0, 0, 1, 1 };
 	int nMaxCountofContinous0sAnd1s = findMaxSubArrayLengthOf0sAnd1s(nArrayOf0sAnd1s);
+
+	nArrayOf0sAnd1s = { 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0 };
+	int nLongestSubArrsizeWithContinous1s = findLongestConsecutive1sByChanignKElem(nArrayOf0sAnd1s, 2);
+
 
 
 	vector<int> nInputArrOfColors = { 2,0,2,1,1,0 };
